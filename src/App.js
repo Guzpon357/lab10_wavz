@@ -1,9 +1,11 @@
 import './App.css';
 import './style.css';
+import { useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+  const [number, setNumber] = useState(0);
 
 
   return (
@@ -14,6 +16,9 @@ function App() {
       
       <div className="body">
         <img src="./perfil.jpg" className="imagen" alt='imagen-perfil'/>
+        <h2>El valor de number es: {number}</h2>
+        <button onClick={() => setNumber(number + 1)}>Incrementar</button>
+        <button onClick={() => setNumber(number - 1)}>Decrementar</button>
         <div className="body-left">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel dui mollis mi sagittis pulvinar vitae vel turpis. Sed vel dui id sem bibendum convallis. Vestibulum tempus tortor mauris, sit amet efficitur mauris blandit vel. Nunc mattis eu nisl quis suscipit. Cras non gravida mauris, tincidunt eleifend augue. Integer interdum vulputate imperdiet. Nulla justo ligula, imperdiet a nibh euismod, sagittis laoreet urna. In quis est arcu. Vivamus at tortor vitae nulla blandit fringilla. Suspendisse ac mollis tellus. Sed et arcu orci. Mauris sodales libero eu massa porta commodo. Suspendisse luctus est vitae urna blandit pulvinar. Curabitur maximus commodo ornare. In magna erat, posuere sagittis nisl quis, ultricies ultrices mauris.</p>
           <p>Pellentesque eget ante nec elit blandit dapibus. Etiam ante nulla, molestie nec risus sed, commodo tempus nisi. Maecenas sed enim at lectus commodo iaculis a ac tellus. Proin mattis aliquet ligula a sollicitudin. Suspendisse potenti. Aliquam consectetur tristique turpis at vulputate. Morbi elit quam, interdum vitae iaculis a, finibus eget massa. Aliquam efficitur tortor at scelerisque faucibus. Integer pulvinar faucibus felis et cursus. Sed et venenatis lacus. Nulla consequat elit erat, in malesuada arcu vehicula et. Aenean tempor dignissim urna id maximus. Nunc a leo sit amet felis porttitor viverra. Nulla vel urna gravida, lacinia nisl id, lacinia magna. Proin dui mi, convallis a tincidunt id, rhoncus eu magna. Nunc maximus arcu sit amet risus bibendum vestibulum.</p>

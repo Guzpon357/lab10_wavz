@@ -29,6 +29,14 @@
 .body{
     background-color: rgb(187, 187, 187);
 }
+.body button {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background-color: bisque;
+    border-radius: 5%;
+    margin: 20px 20px 20px 20px
+}
 .body-left{
     background-color: rgb(224, 224, 224);
     margin-top: 20px;
